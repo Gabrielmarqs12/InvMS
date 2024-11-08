@@ -31,7 +31,8 @@ namespace Inv.MS.DAO
                 {
                     access = true;
                 }
-                
+                con.disconnnect();
+                dr.Close(); 
             }
             catch (SqlException ex)
             {
@@ -53,7 +54,8 @@ namespace Inv.MS.DAO
                 {
                     recovery = true;
                 }
-
+                con.disconnnect();
+                dr.Close();
             }
             catch (SqlException ex)
             {
@@ -62,7 +64,7 @@ namespace Inv.MS.DAO
             return recovery;
         }
 
-        public bool RecoveryData(string email)    //Comandos SQL, retornandologin e senha se email OK
+        public bool RecoveryData(string email)    //Comandos SQL, retornando login e senha
         {
             cmd.CommandText = "SELECT * FROM vendedor WHERE emal = @email";
             cmd.Parameters.AddWithValue("@email", email);
@@ -72,19 +74,49 @@ namespace Inv.MS.DAO
                 cmd.Connection = con.connect();
                 dr = cmd.ExecuteReader();
                 dr.Read();
-
-                return;
                 
+                con.disconnnect();
+                dr.Close();
+                
+                return true;    //Necessita alteração de valor no codigo, não esquecer
             }
             catch (SqlException ex)
             {
                 this.message = "Erro com o Banco de dados! erro" + ex;
             }
-            return;
+            return true;        //Necessita alteração de valor no codigo, não esquecer
         }
 
         public string Register(string nome, string login, string senha, string confSenha, string email, string perfil) //Comandos SQL para registro dos dados
         {
+            access = false;
+            if (senha.Equals(confSenha))
+            {
+                cmd.CommandText = "INSERT INTO vendedor VALUES (@n, @l, @s, @e, @p);";
+                cmd.Parameters.AddWithValue("@n", nome);
+                cmd.Parameters.AddWithValue("@l", login);
+                cmd.Parameters.AddWithValue("@s", senha);
+                cmd.Parameters.AddWithValue("@e", email);
+                cmd.Parameters.AddWithValue("@p", perfil);
+
+                try
+                {
+                    cmd.Connection = con.connect();
+                    cmd.ExecuteNonQuery();
+
+                    con.disconnnect();
+                    this.message = "Cadastro criado com sucesso";
+                    access = true;
+                }
+                catch (SqlException ex)
+                {
+                    this.message = "Erro com o Banco de dados! erro" + ex;
+                }
+            }
+            else
+            {
+                this.message = "Senhas não correspondem";
+            }
 
             return message;
         }

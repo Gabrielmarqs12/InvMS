@@ -6,11 +6,11 @@ Status: Work in progress ⚠️
 #### Current functions
 
 * Acess control
+* Account recovery system
 * User registration
 
 #### Developing
 
-* Account recovery system
 * Home page
 * Purchase order
 * Inventory control

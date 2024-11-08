@@ -25,7 +25,13 @@ namespace Inv.MS.modulo
 
         public string Register(string nome, string login, string senha, string confSenha, string email, string perfil) 
         {
+            DaoComandos LoginDao = new DaoComandos();
+            this.message = LoginDao.Register(nome, login, senha, confSenha, email, perfil);
 
+            if (LoginDao.access)
+            {
+                this.result = true;
+            }
             return message;
         }
     }

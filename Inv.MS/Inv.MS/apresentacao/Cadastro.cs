@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inv.MS.modulo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,17 @@ namespace Cellar_Managment_System
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            Controle ctrl = new Controle();
+            string message = ctrl.Register(txtNome.Text, txtLogin.Text, txtSenha.Text, txtConfSenha.Text, txtEmail.Text, cmbPerfil.Text);
 
+            if (ctrl.result)
+            {
+                MessageBox.Show(message, "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(ctrl.message);
+            }
         }
     }
 }

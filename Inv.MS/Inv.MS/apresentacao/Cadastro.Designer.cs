@@ -128,6 +128,7 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(9, 46);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(239, 22);
             this.txtSenha.TabIndex = 7;
             // 
@@ -135,6 +136,7 @@
             // 
             this.txtConfSenha.Location = new System.Drawing.Point(254, 46);
             this.txtConfSenha.Name = "txtConfSenha";
+            this.txtConfSenha.PasswordChar = '*';
             this.txtConfSenha.Size = new System.Drawing.Size(239, 22);
             this.txtConfSenha.TabIndex = 9;
             // 
@@ -261,7 +263,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Cadastro";
-            this.Text = "Cadastro";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Cadastro_Load);
             this.grbDados.ResumeLayout(false);
             this.grbDados.PerformLayout();

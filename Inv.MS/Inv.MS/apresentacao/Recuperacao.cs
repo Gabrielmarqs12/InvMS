@@ -52,10 +52,6 @@ namespace Cellar_Managment_System.Apresentacao
         private void btnVerificar_Click(object sender, EventArgs e)
         {
             string CODE = txtCodigo.Text;
-            if(CODE == key) 
-            {
-                
-            }
         }
     }
 }
