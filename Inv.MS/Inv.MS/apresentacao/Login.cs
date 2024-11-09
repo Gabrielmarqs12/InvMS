@@ -17,6 +17,7 @@ namespace Cellar_Managment_System
         public frmLogin()
         {
             InitializeComponent();
+            txtLogin.Focus();
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

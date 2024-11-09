@@ -15,7 +15,8 @@ namespace Cellar_Managment_System.Apresentacao
 {
     public partial class Recuperacao : Form
     {
-        public int key;
+        public string key;
+        public string email;
         public Recuperacao()
         {
             InitializeComponent();
@@ -33,14 +34,15 @@ namespace Cellar_Managment_System.Apresentacao
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            string email = txtEmail.Text;
             DaoComandos RecoveryDao = new DaoComandos();
             KeyGen KeyG = new KeyGen();
+
+            email = txtEmail.Text;
+            key = KeyG.Generate();
 
             RecoveryDao.AccessDBRecovery(email);
             if(RecoveryDao.recovery)
             {
-                key = KeyG.Generate();
                 EMailSender.Send(email, key);
             }
             else
@@ -51,7 +53,16 @@ namespace Cellar_Managment_System.Apresentacao
 
         private void btnVerificar_Click(object sender, EventArgs e)
         {
+            DaoComandos RecoveryDao = new DaoComandos();
+
             string CODE = txtCodigo.Text;
+
+            if(CODE == key)
+            {
+                var recoveryValues = RecoveryDao.RecoveryData(email);
+                lblLoginRec.Text = recoveryValues[0].ToString();
+                lblSenhaRec.Text = recoveryValues[1].ToString();
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Inv.MS.function
 {
     public static class EMailSender
     {
-        public static void Send(string email, int key)
+        public static void Send(string email, string key)
         {
             MailMessage emailMessage = new MailMessage();
             try
@@ -20,10 +20,10 @@ namespace Inv.MS.function
                 smtpClient.EnableSsl = true;
                 smtpClient.Timeout = 60 * 60;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("invms561@gmail.com", "@0a497!AgZo20");
+                smtpClient.Credentials = new NetworkCredential("invms561@gmail.com", "hdturnjqixgujfvk");
 
                 emailMessage.From = new MailAddress("invms561@gmail.com", "Inv.MS");
-                emailMessage.Body = "Seu codigo de recuperação de Senha" + key;
+                emailMessage.Body = "Seu codigo de recuperação de Senha: " + key;
                 emailMessage.Subject = "Recuperação de Senha";
                 emailMessage.IsBodyHtml = true;
                 emailMessage.Priority = MailPriority.Normal;

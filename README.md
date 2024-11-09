@@ -11,8 +11,10 @@ Status: Work in progress ⚠️
 
 #### Developing
 
-* Home page
+* Home page - WIP
+
+#### To be Developed
+
 * Purchase order
 * Inventory control
 * Financial report
-

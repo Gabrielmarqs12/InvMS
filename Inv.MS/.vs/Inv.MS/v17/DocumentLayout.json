@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\inv.ms\\inv.ms\\apresentacao\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\apresentacao\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\inv.ms\\inv.ms\\function\\keygen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\function\\keygen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\inv.ms\\inv.ms\\function\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\function\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\inv.ms\\inv.ms\\dao\\daocomandos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\dao\\daocomandos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\inv.ms\\inv.ms\\apresentacao\\recuperacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\apresentacao\\recuperacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\inv.ms\\inv.ms\\apresentacao\\recuperacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\apresentacao\\recuperacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MenuPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\apresentacao\\MenuPrincipal.cs",
-              "RelativeDocumentMoniker": "Inv.MS\\apresentacao\\MenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\apresentacao\\MenuPrincipal.cs [Design]",
-              "RelativeToolTip": "Inv.MS\\apresentacao\\MenuPrincipal.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "Recuperacao.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\apresentacao\\Recuperacao.cs",
+              "RelativeDocumentMoniker": "Inv.MS\\apresentacao\\Recuperacao.cs",
+              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\apresentacao\\Recuperacao.cs [Design]",
+              "RelativeToolTip": "Inv.MS\\apresentacao\\Recuperacao.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:14:35.846Z",
+              "WhenOpened": "2024-11-09T15:45:16.226Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Recuperacao.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\apresentacao\\Recuperacao.cs",
+              "RelativeDocumentMoniker": "Inv.MS\\apresentacao\\Recuperacao.cs",
+              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\apresentacao\\Recuperacao.cs",
+              "RelativeToolTip": "Inv.MS\\apresentacao\\Recuperacao.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwD4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:45:19.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DaoComandos.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\DAO\\DaoComandos.cs",
+              "RelativeDocumentMoniker": "Inv.MS\\DAO\\DaoComandos.cs",
+              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\DAO\\DaoComandos.cs",
+              "RelativeToolTip": "Inv.MS\\DAO\\DaoComandos.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEIAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:45:30.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EMailSender.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\function\\EMailSender.cs",
+              "RelativeDocumentMoniker": "Inv.MS\\function\\EMailSender.cs",
+              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\function\\EMailSender.cs",
+              "RelativeToolTip": "Inv.MS\\function\\EMailSender.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:45:38.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KeyGen.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\function\\KeyGen.cs",
+              "RelativeDocumentMoniker": "Inv.MS\\function\\KeyGen.cs",
+              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\function\\KeyGen.cs",
+              "RelativeToolTip": "Inv.MS\\function\\KeyGen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:45:36.4Z",
+              "EditorCaption": ""
             }
           ]
         }

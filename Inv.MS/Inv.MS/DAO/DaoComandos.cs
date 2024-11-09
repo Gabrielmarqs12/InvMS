@@ -43,7 +43,7 @@ namespace Inv.MS.DAO
 
         public bool AccessDBRecovery(string email)    //Comandos SQL, retornando verdadeiro se email OK
         {
-            cmd.CommandText = "SELECT * FROM vendedor WHERE emal = @email";
+            cmd.CommandText = "SELECT * FROM vendedor WHERE email = @email";
             cmd.Parameters.AddWithValue("@email", email);
 
             try
@@ -64,9 +64,10 @@ namespace Inv.MS.DAO
             return recovery;
         }
 
-        public bool RecoveryData(string email)    //Comandos SQL, retornando login e senha
+        public object[] RecoveryData(string email)    //Comandos SQL, retornando login e senha via objeto
         {
-            cmd.CommandText = "SELECT * FROM vendedor WHERE emal = @email";
+
+            cmd.CommandText = "SELECT * FROM vendedor WHERE email = @email";
             cmd.Parameters.AddWithValue("@email", email);
 
             try
@@ -74,17 +75,19 @@ namespace Inv.MS.DAO
                 cmd.Connection = con.connect();
                 dr = cmd.ExecuteReader();
                 dr.Read();
-                
+
+                var result = new object[] {dr.GetString(2), dr.GetString(3)};
+
                 con.disconnnect();
                 dr.Close();
-                
-                return true;    //Necessita alteração de valor no codigo, não esquecer
+
+                return result;    
             }
             catch (SqlException ex)
             {
                 this.message = "Erro com o Banco de dados! erro" + ex;
             }
-            return true;        //Necessita alteração de valor no codigo, não esquecer
+            return null;
         }
 
         public string Register(string nome, string login, string senha, string confSenha, string email, string perfil) //Comandos SQL para registro dos dados

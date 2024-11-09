@@ -41,6 +41,7 @@ namespace Cellar_Managment_System
             {
                 MessageBox.Show(ctrl.message);
             }
+            this.Close();
         }
     }
 }

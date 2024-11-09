@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnCalculadoa = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
             this.btnEstoque = new System.Windows.Forms.Button();
@@ -38,21 +37,17 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.lblLogo = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.panelForm = new System.Windows.Forms.Panel();
-            this.panelFormTop = new System.Windows.Forms.Panel();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblBemvindo = new System.Windows.Forms.Label();
+            this.panelHome = new System.Windows.Forms.Panel();
+            this.lblClock = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            this.panelForm.SuspendLayout();
-            this.panelFormTop.SuspendLayout();
+            this.panelHome.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(82)))), ((int)(((byte)(102)))));
-            this.panelMenu.Controls.Add(this.btnCalculadoa);
             this.panelMenu.Controls.Add(this.btnSair);
             this.panelMenu.Controls.Add(this.btnFinanceiro);
             this.panelMenu.Controls.Add(this.btnEstoque);
@@ -64,24 +59,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(240, 641);
             this.panelMenu.TabIndex = 0;
-            // 
-            // btnCalculadoa
-            // 
-            this.btnCalculadoa.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCalculadoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(82)))), ((int)(((byte)(102)))));
-            this.btnCalculadoa.FlatAppearance.BorderSize = 0;
-            this.btnCalculadoa.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnCalculadoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(123)))), ((int)(((byte)(153)))));
-            this.btnCalculadoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalculadoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculadoa.ForeColor = System.Drawing.Color.White;
-            this.btnCalculadoa.Location = new System.Drawing.Point(0, 330);
-            this.btnCalculadoa.Name = "btnCalculadoa";
-            this.btnCalculadoa.Size = new System.Drawing.Size(240, 60);
-            this.btnCalculadoa.TabIndex = 6;
-            this.btnCalculadoa.Text = "CALCULADORA";
-            this.btnCalculadoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCalculadoa.UseVisualStyleBackColor = true;
             // 
             // btnSair
             // 
@@ -206,46 +183,25 @@
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
-            // panelForm
+            // panelHome
             // 
-            this.panelForm.Controls.Add(this.panelFormTop);
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(240, 0);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(824, 641);
-            this.panelForm.TabIndex = 1;
+            this.panelHome.Controls.Add(this.lblClock);
+            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHome.Location = new System.Drawing.Point(240, 0);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(824, 641);
+            this.panelHome.TabIndex = 1;
             // 
-            // panelFormTop
+            // lblClock
             // 
-            this.panelFormTop.BackColor = System.Drawing.Color.DimGray;
-            this.panelFormTop.Controls.Add(this.lblNome);
-            this.panelFormTop.Controls.Add(this.lblBemvindo);
-            this.panelFormTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFormTop.Location = new System.Drawing.Point(0, 0);
-            this.panelFormTop.Name = "panelFormTop";
-            this.panelFormTop.Size = new System.Drawing.Size(824, 90);
-            this.panelFormTop.TabIndex = 0;
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.ForeColor = System.Drawing.Color.White;
-            this.lblNome.Location = new System.Drawing.Point(7, 37);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(141, 20);
-            this.lblNome.TabIndex = 1;
-            this.lblNome.Text = "Gabriel Marques";
-            // 
-            // lblBemvindo
-            // 
-            this.lblBemvindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemvindo.ForeColor = System.Drawing.Color.White;
-            this.lblBemvindo.Location = new System.Drawing.Point(3, 9);
-            this.lblBemvindo.Name = "lblBemvindo";
-            this.lblBemvindo.Size = new System.Drawing.Size(145, 36);
-            this.lblBemvindo.TabIndex = 0;
-            this.lblBemvindo.Text = "Bem Vindo";
+            this.lblClock.AutoSize = true;
+            this.lblClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClock.Location = new System.Drawing.Point(234, 270);
+            this.lblClock.Name = "lblClock";
+            this.lblClock.Size = new System.Drawing.Size(364, 73);
+            this.lblClock.TabIndex = 0;
+            this.lblClock.Text = "12 : 30 : 00";
+            this.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MenuPrincipal
             // 
@@ -253,16 +209,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1064, 641);
-            this.Controls.Add(this.panelForm);
+            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelMenu);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            this.panelForm.ResumeLayout(false);
-            this.panelFormTop.ResumeLayout(false);
-            this.panelFormTop.PerformLayout();
+            this.panelHome.ResumeLayout(false);
+            this.panelHome.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -278,10 +233,7 @@
         private System.Windows.Forms.Button btnFinanceiro;
         private System.Windows.Forms.Button btnEstoque;
         private System.Windows.Forms.Button btnPedidos;
-        private System.Windows.Forms.Panel panelForm;
-        private System.Windows.Forms.Button btnCalculadoa;
-        private System.Windows.Forms.Panel panelFormTop;
-        private System.Windows.Forms.Label lblBemvindo;
-        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Panel panelHome;
+        private System.Windows.Forms.Label lblClock;
     }
 }
