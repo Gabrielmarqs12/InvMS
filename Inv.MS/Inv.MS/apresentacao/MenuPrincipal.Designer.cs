@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
@@ -38,11 +40,20 @@
             this.lblLogo = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelHome = new System.Windows.Forms.Panel();
+            this.chtResumo = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblBV = new System.Windows.Forms.Label();
             this.lblClock = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panelHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chtResumo)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -57,7 +68,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(240, 641);
+            this.panelMenu.Size = new System.Drawing.Size(240, 961);
             this.panelMenu.TabIndex = 0;
             // 
             // btnSair
@@ -70,7 +81,7 @@
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(0, 581);
+            this.btnSair.Location = new System.Drawing.Point(0, 901);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(240, 60);
             this.btnSair.TabIndex = 5;
@@ -185,39 +196,104 @@
             // 
             // panelHome
             // 
+            this.panelHome.Controls.Add(this.groupBox1);
+            this.panelHome.Controls.Add(this.panel1);
             this.panelHome.Controls.Add(this.lblClock);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(240, 0);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(824, 641);
+            this.panelHome.Size = new System.Drawing.Size(1664, 961);
             this.panelHome.TabIndex = 1;
+            // 
+            // chtResumo
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chtResumo.ChartAreas.Add(chartArea1);
+            this.chtResumo.Location = new System.Drawing.Point(6, 21);
+            this.chtResumo.Name = "chtResumo";
+            this.chtResumo.Size = new System.Drawing.Size(529, 318);
+            this.chtResumo.TabIndex = 2;
+            this.chtResumo.Text = "chart1";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.lblNome);
+            this.panel1.Controls.Add(this.lblBV);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1664, 90);
+            this.panel1.TabIndex = 1;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Location = new System.Drawing.Point(6, 37);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(236, 25);
+            this.lblNome.TabIndex = 1;
+            this.lblNome.Text = "#NOME DO USUARIO#";
+            // 
+            // lblBV
+            // 
+            this.lblBV.AutoSize = true;
+            this.lblBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBV.ForeColor = System.Drawing.Color.White;
+            this.lblBV.Location = new System.Drawing.Point(6, 9);
+            this.lblBV.Name = "lblBV";
+            this.lblBV.Size = new System.Drawing.Size(116, 25);
+            this.lblBV.TabIndex = 0;
+            this.lblBV.Text = "Bem Vindo";
             // 
             // lblClock
             // 
-            this.lblClock.AutoSize = true;
-            this.lblClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClock.Location = new System.Drawing.Point(234, 270);
+            this.lblClock.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblClock.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClock.Location = new System.Drawing.Point(0, 875);
             this.lblClock.Name = "lblClock";
-            this.lblClock.Size = new System.Drawing.Size(364, 73);
+            this.lblClock.Size = new System.Drawing.Size(1664, 86);
             this.lblClock.TabIndex = 0;
-            this.lblClock.Text = "12 : 30 : 00";
+            this.lblClock.Text = "12:30:00";
             this.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.chtResumo);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(7, 97);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(541, 345);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Resumo de vendas anual";
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1064, 641);
+            this.ClientSize = new System.Drawing.Size(1904, 961);
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelMenu);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panelHome.ResumeLayout(false);
-            this.panelHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chtResumo)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -235,5 +311,11 @@
         private System.Windows.Forms.Button btnPedidos;
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Label lblClock;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblBV;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chtResumo;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

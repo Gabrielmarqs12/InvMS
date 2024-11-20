@@ -14,7 +14,7 @@ namespace Inv.MS.modulo
 
         public bool Access(string login, string senha) //Verificação de acesso ao aplicativo com os dados do servidor
         {
-            DaoComandos LoginDao = new DaoComandos();
+            DAOUser LoginDao = new DAOUser();
             result = LoginDao.AccessDBLogin(login, senha);
             if (!LoginDao.message.Equals(""))
             {
@@ -25,7 +25,7 @@ namespace Inv.MS.modulo
 
         public string Register(string nome, string login, string senha, string confSenha, string email, string perfil) 
         {
-            DaoComandos LoginDao = new DaoComandos();
+            DAOUser LoginDao = new DAOUser();
             this.message = LoginDao.Register(nome, login, senha, confSenha, email, perfil);
 
             if (LoginDao.access)

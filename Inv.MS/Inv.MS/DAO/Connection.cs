@@ -7,12 +7,12 @@ using System.Data.SqlClient;
 
 namespace Inv.MS.DAO
 {
-    public class Conexao
+    public class Connection
     {
 
         SqlConnection con = new SqlConnection();
 
-        public Conexao()
+        public Connection()
         {
             con.ConnectionString = @"Data Source=GABRIEL;Initial Catalog=invms;Integrated Security=True;";
         }

@@ -30,7 +30,7 @@ namespace Cellar_Managment_System
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Controle ctrl = new Controle();
+            Inv.MS.modulo.Controle ctrl = new Inv.MS.modulo.Controle();
             string message = ctrl.Register(txtNome.Text, txtLogin.Text, txtSenha.Text, txtConfSenha.Text, txtEmail.Text, cmbPerfil.Text);
 
             if (ctrl.result)

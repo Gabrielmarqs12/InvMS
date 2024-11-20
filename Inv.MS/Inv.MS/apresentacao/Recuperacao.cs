@@ -34,7 +34,7 @@ namespace Cellar_Managment_System.Apresentacao
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            DaoComandos RecoveryDao = new DaoComandos();
+            DAOUser RecoveryDao = new DAOUser();
             KeyGen KeyG = new KeyGen();
 
             email = txtEmail.Text;
@@ -53,7 +53,7 @@ namespace Cellar_Managment_System.Apresentacao
 
         private void btnVerificar_Click(object sender, EventArgs e)
         {
-            DaoComandos RecoveryDao = new DaoComandos();
+            DAOUser RecoveryDao = new DAOUser();
 
             string CODE = txtCodigo.Text;
 

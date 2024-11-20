@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Inv.MS.DAO
 {
-    class DaoComandos
+    class DAOUser
     {
         public bool recovery = false;                       //Nenhum email pesquisado por padrão
         public bool access = false;                         //Acesso negado por padrão
         public string message = "";                         //Sem mensagem tudo OK
         SqlCommand cmd = new SqlCommand();
-        Conexao con = new Conexao();
+        Connection con = new Connection();
         SqlDataReader dr;
 
         public bool AccessDBLogin(string login, string senha)    //Comandos SQL, retornando verdadeiro se login e senha OK
@@ -88,6 +88,13 @@ namespace Inv.MS.DAO
                 this.message = "Erro com o Banco de dados! erro" + ex;
             }
             return null;
+        }
+
+        public string getName()
+        {
+            string name = "Gabriel Marques Cardoso";
+
+            return name;
         }
 
         public string Register(string nome, string login, string senha, string confSenha, string email, string perfil) //Comandos SQL para registro dos dados
