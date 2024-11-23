@@ -1,4 +1,5 @@
 ﻿using Cellar_Managment_System;
+using Cellar_Managment_System.Apresentacao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,10 @@ namespace Inv.MS
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmMenuPrincipal("Gabriel"));
         }
     }
 }

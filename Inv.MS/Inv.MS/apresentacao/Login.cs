@@ -1,4 +1,5 @@
 ﻿using Cellar_Managment_System.Apresentacao;
+using Inv.MS.DAO;
 using Inv.MS.modulo;
 using System;
 using System.Collections.Generic;
@@ -39,13 +40,16 @@ namespace Cellar_Managment_System
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             Controle ctrl = new Controle();
+            DAOUser Dao = new DAOUser();
+
             ctrl.Access(txtLogin.Text, txtSenha.Text);
             if (ctrl.message.Equals(""))
             {
                 if (ctrl.result)
                 {
-                    MenuPrincipal MP = new MenuPrincipal();
+                    frmMenuPrincipal MP = new frmMenuPrincipal(Dao.getName(txtLogin.Text));
                     MP.ShowDialog();
+                    
                 }
                 else
                 {

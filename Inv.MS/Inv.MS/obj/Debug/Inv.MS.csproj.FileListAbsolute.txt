@@ -86,7 +86,6 @@ C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.exe.config
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.Cadastro.resources
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.frmLogin.resources
-C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.Apresentacao.MenuPrincipal.resources
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.Apresentacao.Recuperacao.resources
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.Properties.Resources.resources
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.csproj.GenerateResource.cache
@@ -94,3 +93,4 @@ C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.csproj.Up2Date
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.exe
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.pdb
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.Apresentacao.frmMenuPrincipal.resources

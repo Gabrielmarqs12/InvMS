@@ -5,6 +5,7 @@ using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Inv.MS.DAO
 {
@@ -90,11 +91,30 @@ namespace Inv.MS.DAO
             return null;
         }
 
-        public string getName()
+        public string getName(string user)
         {
-            string name = "Gabriel Marques Cardoso";
+            cmd.CommandText = "SELECT * FROM vendedor WHERE login = @login";
+            cmd.Parameters.AddWithValue("@login", user);
 
-            return name;
+            try
+            {
+                cmd.Connection = con.connect();
+                dr = cmd.ExecuteReader();
+                dr.Read();
+
+                string name = dr.GetString(1);
+
+                con.disconnnect();
+                dr.Close();
+
+                return name;
+            }
+            catch (SqlException ex)
+            {
+                this.message = "Erro com o Banco de dados! erro" + ex;
+            }
+
+            return "Username ERROR";
         }
 
         public string Register(string nome, string login, string senha, string confSenha, string email, string perfil) //Comandos SQL para registro dos dados

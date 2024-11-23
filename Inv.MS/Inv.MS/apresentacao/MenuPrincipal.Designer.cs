@@ -1,6 +1,6 @@
 ﻿namespace Cellar_Managment_System.Apresentacao
 {
-    partial class MenuPrincipal
+    partial class frmMenuPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
@@ -40,20 +39,43 @@
             this.lblLogo = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelHome = new System.Windows.Forms.Panel();
-            this.chtResumo = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.grbResumo = new System.Windows.Forms.GroupBox();
+            this.pnlEstoque = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pnlTituloEstoque = new System.Windows.Forms.Panel();
+            this.lblTituloEstoque = new System.Windows.Forms.Label();
+            this.lblEstoque = new System.Windows.Forms.Label();
+            this.pnlVendas = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pnlTituloVendas = new System.Windows.Forms.Panel();
+            this.lblTituloVendas = new System.Windows.Forms.Label();
+            this.lblVendas = new System.Windows.Forms.Label();
+            this.pnlClientes = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlTituloClientes = new System.Windows.Forms.Panel();
+            this.lblTituloClientes = new System.Windows.Forms.Label();
+            this.lblClientes = new System.Windows.Forms.Label();
+            this.pnlUsuario = new System.Windows.Forms.Panel();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblBV = new System.Windows.Forms.Label();
             this.lblClock = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tmrRelogio = new System.Windows.Forms.Timer(this.components);
+            this.tmrUpdate = new System.Windows.Forms.Timer(this.components);
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panelHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chtResumo)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grbResumo.SuspendLayout();
+            this.pnlEstoque.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnlTituloEstoque.SuspendLayout();
+            this.pnlVendas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlTituloVendas.SuspendLayout();
+            this.pnlClientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlTituloClientes.SuspendLayout();
+            this.pnlUsuario.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -196,8 +218,8 @@
             // 
             // panelHome
             // 
-            this.panelHome.Controls.Add(this.groupBox1);
-            this.panelHome.Controls.Add(this.panel1);
+            this.panelHome.Controls.Add(this.grbResumo);
+            this.panelHome.Controls.Add(this.pnlUsuario);
             this.panelHome.Controls.Add(this.lblClock);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(240, 0);
@@ -205,26 +227,193 @@
             this.panelHome.Size = new System.Drawing.Size(1664, 961);
             this.panelHome.TabIndex = 1;
             // 
-            // chtResumo
+            // grbResumo
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chtResumo.ChartAreas.Add(chartArea1);
-            this.chtResumo.Location = new System.Drawing.Point(6, 21);
-            this.chtResumo.Name = "chtResumo";
-            this.chtResumo.Size = new System.Drawing.Size(529, 318);
-            this.chtResumo.TabIndex = 2;
-            this.chtResumo.Text = "chart1";
+            this.grbResumo.Controls.Add(this.pnlEstoque);
+            this.grbResumo.Controls.Add(this.pnlVendas);
+            this.grbResumo.Controls.Add(this.pnlClientes);
+            this.grbResumo.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbResumo.Location = new System.Drawing.Point(7, 97);
+            this.grbResumo.Name = "grbResumo";
+            this.grbResumo.Size = new System.Drawing.Size(506, 189);
+            this.grbResumo.TabIndex = 4;
+            this.grbResumo.TabStop = false;
+            this.grbResumo.Text = "OPERAÇÕES RECENTES";
             // 
-            // panel1
+            // pnlEstoque
             // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.lblNome);
-            this.panel1.Controls.Add(this.lblBV);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1664, 90);
-            this.panel1.TabIndex = 1;
+            this.pnlEstoque.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlEstoque.Controls.Add(this.pictureBox3);
+            this.pnlEstoque.Controls.Add(this.pnlTituloEstoque);
+            this.pnlEstoque.Controls.Add(this.lblEstoque);
+            this.pnlEstoque.Location = new System.Drawing.Point(339, 21);
+            this.pnlEstoque.Name = "pnlEstoque";
+            this.pnlEstoque.Size = new System.Drawing.Size(160, 160);
+            this.pnlEstoque.TabIndex = 5;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::Inv.MS.Properties.Resources.compras;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 38);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(158, 93);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pnlTituloEstoque
+            // 
+            this.pnlTituloEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlTituloEstoque.Controls.Add(this.lblTituloEstoque);
+            this.pnlTituloEstoque.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTituloEstoque.Location = new System.Drawing.Point(0, 0);
+            this.pnlTituloEstoque.Name = "pnlTituloEstoque";
+            this.pnlTituloEstoque.Size = new System.Drawing.Size(158, 38);
+            this.pnlTituloEstoque.TabIndex = 2;
+            // 
+            // lblTituloEstoque
+            // 
+            this.lblTituloEstoque.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloEstoque.ForeColor = System.Drawing.Color.White;
+            this.lblTituloEstoque.Location = new System.Drawing.Point(0, 0);
+            this.lblTituloEstoque.Name = "lblTituloEstoque";
+            this.lblTituloEstoque.Size = new System.Drawing.Size(158, 38);
+            this.lblTituloEstoque.TabIndex = 1;
+            this.lblTituloEstoque.Text = "ESTOQUE";
+            this.lblTituloEstoque.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEstoque
+            // 
+            this.lblEstoque.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblEstoque.Location = new System.Drawing.Point(0, 131);
+            this.lblEstoque.Name = "lblEstoque";
+            this.lblEstoque.Size = new System.Drawing.Size(158, 27);
+            this.lblEstoque.TabIndex = 1;
+            this.lblEstoque.Text = "0";
+            this.lblEstoque.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlVendas
+            // 
+            this.pnlVendas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlVendas.Controls.Add(this.pictureBox2);
+            this.pnlVendas.Controls.Add(this.pnlTituloVendas);
+            this.pnlVendas.Controls.Add(this.lblVendas);
+            this.pnlVendas.Location = new System.Drawing.Point(173, 21);
+            this.pnlVendas.Name = "pnlVendas";
+            this.pnlVendas.Size = new System.Drawing.Size(160, 160);
+            this.pnlVendas.TabIndex = 5;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Inv.MS.Properties.Resources.Venda;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 93);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pnlTituloVendas
+            // 
+            this.pnlTituloVendas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlTituloVendas.Controls.Add(this.lblTituloVendas);
+            this.pnlTituloVendas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTituloVendas.Location = new System.Drawing.Point(0, 0);
+            this.pnlTituloVendas.Name = "pnlTituloVendas";
+            this.pnlTituloVendas.Size = new System.Drawing.Size(158, 38);
+            this.pnlTituloVendas.TabIndex = 2;
+            // 
+            // lblTituloVendas
+            // 
+            this.lblTituloVendas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloVendas.ForeColor = System.Drawing.Color.White;
+            this.lblTituloVendas.Location = new System.Drawing.Point(0, 0);
+            this.lblTituloVendas.Name = "lblTituloVendas";
+            this.lblTituloVendas.Size = new System.Drawing.Size(158, 38);
+            this.lblTituloVendas.TabIndex = 1;
+            this.lblTituloVendas.Text = "VENDAS";
+            this.lblTituloVendas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblVendas
+            // 
+            this.lblVendas.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblVendas.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lblVendas.Location = new System.Drawing.Point(0, 131);
+            this.lblVendas.Name = "lblVendas";
+            this.lblVendas.Size = new System.Drawing.Size(158, 27);
+            this.lblVendas.TabIndex = 1;
+            this.lblVendas.Text = "0";
+            this.lblVendas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlClientes
+            // 
+            this.pnlClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlClientes.Controls.Add(this.pictureBox1);
+            this.pnlClientes.Controls.Add(this.pnlTituloClientes);
+            this.pnlClientes.Controls.Add(this.lblClientes);
+            this.pnlClientes.Location = new System.Drawing.Point(7, 22);
+            this.pnlClientes.Name = "pnlClientes";
+            this.pnlClientes.Size = new System.Drawing.Size(160, 160);
+            this.pnlClientes.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Inv.MS.Properties.Resources.Cliente;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pnlTituloClientes
+            // 
+            this.pnlTituloClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlTituloClientes.Controls.Add(this.lblTituloClientes);
+            this.pnlTituloClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTituloClientes.Location = new System.Drawing.Point(0, 0);
+            this.pnlTituloClientes.Name = "pnlTituloClientes";
+            this.pnlTituloClientes.Size = new System.Drawing.Size(158, 38);
+            this.pnlTituloClientes.TabIndex = 1;
+            // 
+            // lblTituloClientes
+            // 
+            this.lblTituloClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloClientes.ForeColor = System.Drawing.Color.White;
+            this.lblTituloClientes.Location = new System.Drawing.Point(0, 0);
+            this.lblTituloClientes.Name = "lblTituloClientes";
+            this.lblTituloClientes.Size = new System.Drawing.Size(158, 38);
+            this.lblTituloClientes.TabIndex = 0;
+            this.lblTituloClientes.Text = "CLIENTES";
+            this.lblTituloClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblClientes
+            // 
+            this.lblClientes.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblClientes.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblClientes.Location = new System.Drawing.Point(0, 131);
+            this.lblClientes.Name = "lblClientes";
+            this.lblClientes.Size = new System.Drawing.Size(158, 27);
+            this.lblClientes.TabIndex = 0;
+            this.lblClientes.Text = "0";
+            this.lblClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlUsuario
+            // 
+            this.pnlUsuario.BackColor = System.Drawing.Color.DimGray;
+            this.pnlUsuario.Controls.Add(this.lblNome);
+            this.pnlUsuario.Controls.Add(this.lblBV);
+            this.pnlUsuario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlUsuario.Location = new System.Drawing.Point(0, 0);
+            this.pnlUsuario.Name = "pnlUsuario";
+            this.pnlUsuario.Size = new System.Drawing.Size(1664, 90);
+            this.pnlUsuario.TabIndex = 1;
             // 
             // lblNome
             // 
@@ -251,31 +440,28 @@
             // lblClock
             // 
             this.lblClock.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblClock.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClock.Location = new System.Drawing.Point(0, 875);
+            this.lblClock.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblClock.Location = new System.Drawing.Point(0, 851);
             this.lblClock.Name = "lblClock";
-            this.lblClock.Size = new System.Drawing.Size(1664, 86);
+            this.lblClock.Size = new System.Drawing.Size(1664, 110);
             this.lblClock.TabIndex = 0;
-            this.lblClock.Text = "12:30:00";
-            this.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblClock.Text = "00:00:00";
+            this.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // timer1
+            // tmrRelogio
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.tmrRelogio.Enabled = true;
+            this.tmrRelogio.Interval = 500;
+            this.tmrRelogio.Tick += new System.EventHandler(this.tmrRelogio_Tick);
             // 
-            // groupBox1
+            // tmrUpdate
             // 
-            this.groupBox1.Controls.Add(this.chtResumo);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(7, 97);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 345);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Resumo de vendas anual";
+            this.tmrUpdate.Enabled = true;
+            this.tmrUpdate.Interval = 10000;
+            this.tmrUpdate.Tick += new System.EventHandler(this.tmrUpdate_Tick);
             // 
-            // MenuPrincipal
+            // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -283,17 +469,26 @@
             this.ClientSize = new System.Drawing.Size(1904, 961);
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelMenu);
-            this.Name = "MenuPrincipal";
-            this.Text = "MenuPrincipal";
+            this.Name = "frmMenuPrincipal";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panelHome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chtResumo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.grbResumo.ResumeLayout(false);
+            this.pnlEstoque.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnlTituloEstoque.ResumeLayout(false);
+            this.pnlVendas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlTituloVendas.ResumeLayout(false);
+            this.pnlClientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlTituloClientes.ResumeLayout(false);
+            this.pnlUsuario.ResumeLayout(false);
+            this.pnlUsuario.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -311,11 +506,26 @@
         private System.Windows.Forms.Button btnPedidos;
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Label lblClock;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer tmrRelogio;
+        private System.Windows.Forms.Panel pnlUsuario;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblBV;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chtResumo;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbResumo;
+        private System.Windows.Forms.Panel pnlClientes;
+        private System.Windows.Forms.Panel pnlEstoque;
+        private System.Windows.Forms.Label lblEstoque;
+        private System.Windows.Forms.Panel pnlVendas;
+        private System.Windows.Forms.Label lblVendas;
+        private System.Windows.Forms.Label lblClientes;
+        private System.Windows.Forms.Panel pnlTituloClientes;
+        private System.Windows.Forms.Panel pnlTituloEstoque;
+        private System.Windows.Forms.Panel pnlTituloVendas;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblTituloEstoque;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblTituloVendas;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblTituloClientes;
+        private System.Windows.Forms.Timer tmrUpdate;
     }
 }

@@ -124,7 +124,6 @@
       <DependentUpon>Recuperacao.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\Connection.cs" />
-    <Compile Include="DAO\DAOFinancial.cs" />
     <Compile Include="DAO\DAOUser.cs" />
     <Compile Include="DAO\DAOProduct.cs" />
     <Compile Include="function\EMailSender.cs" />
@@ -169,6 +168,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\Venda.png" />
+    <None Include="images\Pagamento.png" />
+    <None Include="images\Cliente.png" />
+    <None Include="images\compras.png" />
     <Content Include="images\Logo.ico" />
     <Content Include="images\Logo.png" />
   </ItemGroup>
