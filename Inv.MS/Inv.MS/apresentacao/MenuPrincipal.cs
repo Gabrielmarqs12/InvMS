@@ -31,6 +31,7 @@ namespace Cellar_Managment_System.Apresentacao
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+            lblVendas.Text = user.getDataSum(DateTime.Today.ToString("d")).ToString();
         }
 
         private void tmrRelogio_Tick(object sender, EventArgs e)

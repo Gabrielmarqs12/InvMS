@@ -20,9 +20,9 @@ namespace Inv.MS.function
                 smtpClient.EnableSsl = true;
                 smtpClient.Timeout = 60 * 60;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("invms561@gmail.com", "hdturnjqixgujfvk");
+                smtpClient.Credentials = new NetworkCredential(DotNetEnv.Env.GetString("email"), DotNetEnv.Env.GetString("senha"));
 
-                emailMessage.From = new MailAddress("invms561@gmail.com", "Inv.MS");
+                emailMessage.From = new MailAddress(DotNetEnv.Env.GetString("email"), "Inv.MS");
                 emailMessage.Body = "Seu codigo de recuperação de Senha: " + key;
                 emailMessage.Subject = "Recuperação de Senha";
                 emailMessage.IsBodyHtml = true;

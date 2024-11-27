@@ -1,9 +1,6 @@
 ﻿using Cellar_Managment_System;
 using Cellar_Managment_System.Apresentacao;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Inv.MS
@@ -16,10 +13,17 @@ namespace Inv.MS
         [STAThread]
         static void Main()
         {
-            
+            DotNetEnv.Env.Load();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenuPrincipal("Gabriel"));
+            frmLogin formLogin = new frmLogin();
+
+            Application.Run(formLogin);
+            if (formLogin.LoginComplete)
+            {
+                Application.Run(new frmMenuPrincipal(formLogin.firstName));
+            }
         }
     }
 }

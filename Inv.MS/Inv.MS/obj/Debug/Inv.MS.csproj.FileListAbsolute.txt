@@ -82,8 +82,6 @@ C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.csproj.AssemblyReference.cache
-C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.csproj.SuggestedBindingRedirects.cache
-C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.exe.config
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.Cadastro.resources
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.frmLogin.resources
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.Apresentacao.Recuperacao.resources
@@ -94,3 +92,14 @@ C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.exe
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Inv.MS.pdb
 C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\obj\Debug\Cellar_Managment_System.Apresentacao.frmMenuPrincipal.resources
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\.env-example
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\.env
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\DotNetEnv.dll
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Sprache.dll
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\marqu\OneDrive\Área de Trabalho\Personal\Projects\C#\Inv.MS\Inv.MS\Inv.MS\bin\Debug\Sprache.xml

@@ -48,7 +48,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(54, 241);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(100, 23);
-            this.btnEntrar.TabIndex = 0;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "ENTRAR";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -67,7 +67,7 @@
             this.txtLogin.Location = new System.Drawing.Point(20, 154);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(165, 20);
-            this.txtLogin.TabIndex = 2;
+            this.txtLogin.TabIndex = 0;
             // 
             // lblLogin
             // 
@@ -103,7 +103,7 @@
             this.lnkSenha.Location = new System.Drawing.Point(41, 276);
             this.lnkSenha.Name = "lnkSenha";
             this.lnkSenha.Size = new System.Drawing.Size(126, 15);
-            this.lnkSenha.TabIndex = 5;
+            this.lnkSenha.TabIndex = 3;
             this.lnkSenha.TabStop = true;
             this.lnkSenha.Text = "Esqueci minha senha";
             this.lnkSenha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,7 +117,7 @@
             this.lnkCadastro.Location = new System.Drawing.Point(78, 328);
             this.lnkCadastro.Name = "lnkCadastro";
             this.lnkCadastro.Size = new System.Drawing.Size(52, 13);
-            this.lnkCadastro.TabIndex = 6;
+            this.lnkCadastro.TabIndex = 4;
             this.lnkCadastro.TabStop = true;
             this.lnkCadastro.Text = "Cadastrar";
             this.lnkCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
