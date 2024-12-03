@@ -1,4 +1,5 @@
-﻿using Inv.MS.DAO;
+﻿using Inv.MS.apresentacao;
+using Inv.MS.DAO;
 using Inv.MS.function;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,50 @@ namespace Cellar_Managment_System.Apresentacao
 {
     public partial class frmMenuPrincipal : Form
     {
-
+        private Form frmAtivo;
         DAOProduct user = new DAOProduct();
 
         public frmMenuPrincipal(string username)
         {
             InitializeComponent();
             this.lblNome.Text = username;
+        }
+
+        private void FormShow(Form frm)
+        {
+            ActiveFormClose();
+            frmAtivo = frm;
+            frm.TopLevel = false;
+            panelHome.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
+
+        private void ActiveFormClose()
+        {
+            if (frmAtivo != null) frmAtivo.Close();
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ActiveFormClose();
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            FormShow(new frmPedidos());
+        }
+
+        private void btnEstoque_Click(object sender, EventArgs e)
+        {
+            FormShow(new frmEstoque());
+        }
+
+        private void btnFinanceiro_Click(object sender, EventArgs e)
+        {
+            frmFinanceiro financeiro = new frmFinanceiro();
+            financeiro.Show();
         }
 
         private void btnSair_Click(object sender, EventArgs e)

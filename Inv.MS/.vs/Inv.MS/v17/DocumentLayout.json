@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\",
+  "WorkspaceRootPath": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\InvMS\\Inv.MS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\inv.ms\\inv.ms\\inv.ms\\apresentacao\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\invms\\inv.ms\\inv.ms\\apresentacao\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\apresentacao\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|c:\\users\\marqu\\onedrive\\\u00E1rea de trabalho\\personal\\projects\\c#\\invms\\inv.ms\\inv.ms\\apresentacao\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E416D043-2CF2-4E85-BF17-5B66148227FB}|Inv.MS\\Inv.MS.csproj|solutionrelative:inv.ms\\apresentacao\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,12 +24,24 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MenuPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\Inv.MS\\apresentacao\\MenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\InvMS\\Inv.MS\\Inv.MS\\apresentacao\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Inv.MS\\apresentacao\\MenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\Inv.MS\\Inv.MS\\Inv.MS\\apresentacao\\MenuPrincipal.cs [Design]",
+              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\InvMS\\Inv.MS\\Inv.MS\\apresentacao\\MenuPrincipal.cs [Design]",
               "RelativeToolTip": "Inv.MS\\apresentacao\\MenuPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:46:20.831Z",
+              "WhenOpened": "2024-12-03T00:47:02.314Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pedidos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\InvMS\\Inv.MS\\Inv.MS\\apresentacao\\Pedidos.cs",
+              "RelativeDocumentMoniker": "Inv.MS\\apresentacao\\Pedidos.cs",
+              "ToolTip": "C:\\Users\\marqu\\OneDrive\\\u00C1rea de Trabalho\\Personal\\Projects\\C#\\InvMS\\Inv.MS\\Inv.MS\\apresentacao\\Pedidos.cs [Design]",
+              "RelativeToolTip": "Inv.MS\\apresentacao\\Pedidos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T00:47:06.299Z",
               "EditorCaption": " [Design]"
             }
           ]

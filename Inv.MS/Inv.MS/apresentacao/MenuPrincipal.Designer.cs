@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
@@ -37,45 +38,43 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.lblLogo = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelHome = new System.Windows.Forms.Panel();
             this.grbResumo = new System.Windows.Forms.GroupBox();
             this.pnlEstoque = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlTituloEstoque = new System.Windows.Forms.Panel();
             this.lblTituloEstoque = new System.Windows.Forms.Label();
             this.lblEstoque = new System.Windows.Forms.Label();
             this.pnlVendas = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlTituloVendas = new System.Windows.Forms.Panel();
             this.lblTituloVendas = new System.Windows.Forms.Label();
             this.lblVendas = new System.Windows.Forms.Label();
             this.pnlClientes = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTituloClientes = new System.Windows.Forms.Panel();
             this.lblTituloClientes = new System.Windows.Forms.Label();
             this.lblClientes = new System.Windows.Forms.Label();
-            this.pnlUsuario = new System.Windows.Forms.Panel();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblBV = new System.Windows.Forms.Label();
             this.lblClock = new System.Windows.Forms.Label();
             this.tmrRelogio = new System.Windows.Forms.Timer(this.components);
             this.tmrUpdate = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panelHome.SuspendLayout();
             this.grbResumo.SuspendLayout();
             this.pnlEstoque.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlTituloEstoque.SuspendLayout();
             this.pnlVendas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlTituloVendas.SuspendLayout();
             this.pnlClientes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlTituloClientes.SuspendLayout();
-            this.pnlUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -86,11 +85,10 @@
             this.panelMenu.Controls.Add(this.btnEstoque);
             this.panelMenu.Controls.Add(this.btnPedidos);
             this.panelMenu.Controls.Add(this.btnHome);
-            this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Location = new System.Drawing.Point(0, 90);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(240, 961);
+            this.panelMenu.Size = new System.Drawing.Size(240, 871);
             this.panelMenu.TabIndex = 0;
             // 
             // btnSair
@@ -103,7 +101,7 @@
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(0, 901);
+            this.btnSair.Location = new System.Drawing.Point(0, 811);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(240, 60);
             this.btnSair.TabIndex = 5;
@@ -122,13 +120,14 @@
             this.btnFinanceiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinanceiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinanceiro.ForeColor = System.Drawing.Color.White;
-            this.btnFinanceiro.Location = new System.Drawing.Point(0, 270);
+            this.btnFinanceiro.Location = new System.Drawing.Point(0, 180);
             this.btnFinanceiro.Name = "btnFinanceiro";
             this.btnFinanceiro.Size = new System.Drawing.Size(240, 60);
             this.btnFinanceiro.TabIndex = 4;
             this.btnFinanceiro.Text = "FINANCEIRO";
             this.btnFinanceiro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFinanceiro.UseVisualStyleBackColor = true;
+            this.btnFinanceiro.Click += new System.EventHandler(this.btnFinanceiro_Click);
             // 
             // btnEstoque
             // 
@@ -140,13 +139,14 @@
             this.btnEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstoque.ForeColor = System.Drawing.Color.White;
-            this.btnEstoque.Location = new System.Drawing.Point(0, 210);
+            this.btnEstoque.Location = new System.Drawing.Point(0, 120);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(240, 60);
             this.btnEstoque.TabIndex = 3;
             this.btnEstoque.Text = "ESTOQUE";
             this.btnEstoque.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEstoque.UseVisualStyleBackColor = true;
+            this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
             // 
             // btnPedidos
             // 
@@ -158,13 +158,14 @@
             this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPedidos.ForeColor = System.Drawing.Color.White;
-            this.btnPedidos.Location = new System.Drawing.Point(0, 150);
+            this.btnPedidos.Location = new System.Drawing.Point(0, 60);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Size = new System.Drawing.Size(240, 60);
             this.btnPedidos.TabIndex = 2;
             this.btnPedidos.Text = "PEDIDOS";
             this.btnPedidos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPedidos.UseVisualStyleBackColor = true;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
             // btnHome
             // 
@@ -176,55 +177,47 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(0, 90);
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(240, 60);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "HOME";
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.DimGray;
+            this.panelLogo.Controls.Add(this.lblBV);
+            this.panelLogo.Controls.Add(this.lblNome);
             this.panelLogo.Controls.Add(this.lblLogo);
             this.panelLogo.Controls.Add(this.picLogo);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(240, 90);
+            this.panelLogo.Size = new System.Drawing.Size(1904, 90);
             this.panelLogo.TabIndex = 0;
             // 
             // lblLogo
             // 
             this.lblLogo.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(111, 4);
+            this.lblLogo.Location = new System.Drawing.Point(106, 1);
             this.lblLogo.Name = "lblLogo";
             this.lblLogo.Size = new System.Drawing.Size(112, 86);
             this.lblLogo.TabIndex = 1;
             this.lblLogo.Text = "Inv.MS";
             this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // picLogo
-            // 
-            this.picLogo.Image = global::Inv.MS.Properties.Resources.Logo;
-            this.picLogo.Location = new System.Drawing.Point(4, 4);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(87, 86);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
-            // 
             // panelHome
             // 
             this.panelHome.Controls.Add(this.grbResumo);
-            this.panelHome.Controls.Add(this.pnlUsuario);
             this.panelHome.Controls.Add(this.lblClock);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHome.Location = new System.Drawing.Point(240, 0);
+            this.panelHome.Location = new System.Drawing.Point(240, 90);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(1664, 961);
+            this.panelHome.Size = new System.Drawing.Size(1664, 871);
             this.panelHome.TabIndex = 1;
             // 
             // grbResumo
@@ -233,7 +226,7 @@
             this.grbResumo.Controls.Add(this.pnlVendas);
             this.grbResumo.Controls.Add(this.pnlClientes);
             this.grbResumo.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbResumo.Location = new System.Drawing.Point(7, 97);
+            this.grbResumo.Location = new System.Drawing.Point(13, 15);
             this.grbResumo.Name = "grbResumo";
             this.grbResumo.Size = new System.Drawing.Size(506, 189);
             this.grbResumo.TabIndex = 4;
@@ -250,17 +243,6 @@
             this.pnlEstoque.Name = "pnlEstoque";
             this.pnlEstoque.Size = new System.Drawing.Size(160, 160);
             this.pnlEstoque.TabIndex = 5;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::Inv.MS.Properties.Resources.compras;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 38);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(158, 93);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
             // 
             // pnlTituloEstoque
             // 
@@ -304,17 +286,6 @@
             this.pnlVendas.Name = "pnlVendas";
             this.pnlVendas.Size = new System.Drawing.Size(160, 160);
             this.pnlVendas.TabIndex = 5;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Inv.MS.Properties.Resources.Venda;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 38);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(158, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
             // 
             // pnlTituloVendas
             // 
@@ -360,17 +331,6 @@
             this.pnlClientes.Size = new System.Drawing.Size(160, 160);
             this.pnlClientes.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Inv.MS.Properties.Resources.Cliente;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // pnlTituloClientes
             // 
             this.pnlTituloClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -404,23 +364,12 @@
             this.lblClientes.Text = "0";
             this.lblClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlUsuario
-            // 
-            this.pnlUsuario.BackColor = System.Drawing.Color.DimGray;
-            this.pnlUsuario.Controls.Add(this.lblNome);
-            this.pnlUsuario.Controls.Add(this.lblBV);
-            this.pnlUsuario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlUsuario.Location = new System.Drawing.Point(0, 0);
-            this.pnlUsuario.Name = "pnlUsuario";
-            this.pnlUsuario.Size = new System.Drawing.Size(1664, 90);
-            this.pnlUsuario.TabIndex = 1;
-            // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.White;
-            this.lblNome.Location = new System.Drawing.Point(6, 37);
+            this.lblNome.Location = new System.Drawing.Point(245, 45);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(236, 25);
             this.lblNome.TabIndex = 1;
@@ -431,7 +380,7 @@
             this.lblBV.AutoSize = true;
             this.lblBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBV.ForeColor = System.Drawing.Color.White;
-            this.lblBV.Location = new System.Drawing.Point(6, 9);
+            this.lblBV.Location = new System.Drawing.Point(245, 20);
             this.lblBV.Name = "lblBV";
             this.lblBV.Size = new System.Drawing.Size(116, 25);
             this.lblBV.TabIndex = 0;
@@ -442,7 +391,7 @@
             this.lblClock.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblClock.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblClock.Location = new System.Drawing.Point(0, 851);
+            this.lblClock.Location = new System.Drawing.Point(0, 761);
             this.lblClock.Name = "lblClock";
             this.lblClock.Size = new System.Drawing.Size(1664, 110);
             this.lblClock.TabIndex = 0;
@@ -461,6 +410,49 @@
             this.tmrUpdate.Interval = 10000;
             this.tmrUpdate.Tick += new System.EventHandler(this.tmrUpdate_Tick);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::Inv.MS.Properties.Resources.compras;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 38);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(158, 93);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Inv.MS.Properties.Resources.Venda;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 93);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Inv.MS.Properties.Resources.Cliente;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::Inv.MS.Properties.Resources.Logo;
+            this.picLogo.Location = new System.Drawing.Point(3, 1);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(87, 86);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,26 +461,27 @@
             this.ClientSize = new System.Drawing.Size(1904, 961);
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelLogo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenuPrincipal";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.panelLogo.PerformLayout();
             this.panelHome.ResumeLayout(false);
             this.grbResumo.ResumeLayout(false);
             this.pnlEstoque.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlTituloEstoque.ResumeLayout(false);
             this.pnlVendas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlTituloVendas.ResumeLayout(false);
             this.pnlClientes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlTituloClientes.ResumeLayout(false);
-            this.pnlUsuario.ResumeLayout(false);
-            this.pnlUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -507,7 +500,6 @@
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Label lblClock;
         private System.Windows.Forms.Timer tmrRelogio;
-        private System.Windows.Forms.Panel pnlUsuario;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblBV;
         private System.Windows.Forms.GroupBox grbResumo;

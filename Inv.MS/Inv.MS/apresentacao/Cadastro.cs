@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Cellar_Managment_System
 {
-    public partial class Cadastro : Form
+    public partial class frmCadastro : Form
     {
-        public Cadastro()
+        public frmCadastro()
         {
             InitializeComponent();
         }
@@ -21,11 +21,6 @@ namespace Cellar_Managment_System
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void Cadastro_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)

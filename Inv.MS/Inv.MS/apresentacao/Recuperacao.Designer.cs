@@ -1,6 +1,6 @@
 ﻿namespace Cellar_Managment_System.Apresentacao
 {
-    partial class Recuperacao
+    partial class frmRecuperacao
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recuperacao));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRecuperacao));
             this.btnVerificar = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -192,7 +192,7 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // Recuperacao
+            // frmRecuperacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,7 +211,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Recuperacao";
+            this.Name = "frmRecuperacao";
             this.Text = "Recuperacao";
             this.Load += new System.EventHandler(this.Recuperacao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();

@@ -13,11 +13,11 @@ using System.Windows.Forms;
 
 namespace Cellar_Managment_System.Apresentacao
 {
-    public partial class Recuperacao : Form
+    public partial class frmRecuperacao : Form
     {
         public string key;
         public string email;
-        public Recuperacao()
+        public frmRecuperacao()
         {
             InitializeComponent();
         }

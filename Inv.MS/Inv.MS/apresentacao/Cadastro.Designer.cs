@@ -1,6 +1,6 @@
 ﻿namespace Cellar_Managment_System
 {
-    partial class Cadastro
+    partial class frmCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro));
             this.label1 = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
@@ -247,7 +247,7 @@
             this.picLogo.TabIndex = 11;
             this.picLogo.TabStop = false;
             // 
-            // Cadastro
+            // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -262,9 +262,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Cadastro";
+            this.Name = "frmCadastro";
             this.Text = " ";
-            this.Load += new System.EventHandler(this.Cadastro_Load);
             this.grbDados.ResumeLayout(false);
             this.grbDados.PerformLayout();
             this.grbSenha.ResumeLayout(false);

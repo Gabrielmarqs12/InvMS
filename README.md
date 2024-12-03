@@ -11,7 +11,8 @@ Status: Work in progress ⚠️
 
 #### Developing
 
-* Home page - WIP
+* Home page - Design
+* Purchase Order Page - Design
 
 #### To be Developed
 

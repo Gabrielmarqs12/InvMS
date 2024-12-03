@@ -28,13 +28,13 @@ namespace Cellar_Managment_System
 
         private void lnkCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Cadastro cadastro = new Cadastro();
+            frmCadastro cadastro = new frmCadastro();
             cadastro.ShowDialog();
         }
 
         private void lnkSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Recuperacao recuperacao = new Recuperacao();
+            frmRecuperacao recuperacao = new frmRecuperacao();
             recuperacao.ShowDialog();
         }
 
